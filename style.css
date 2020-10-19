@@ -382,12 +382,19 @@ textarea {
 .profile-links {
   display: flex;
   flex-direction: column;
-  justify-self: flex-start; }
-  .profile-links__link {
+  justify-self: flex-start;
+  /*&__link {
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: -1px;
+    }*/ }
+  .profile-links__link:link, .profile-links__link:visited {
     text-decoration: none;
     font-size: 3rem;
     font-weight: bold;
-    letter-spacing: -1px; }
+    letter-spacing: -1px;
+    color: #03045eff; }
   .profile-links__link:not(:last-child) {
     margin-bottom: 1rem; }
   .profile-links__link:hover, .profile-links__link:active {
