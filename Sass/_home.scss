@@ -16,9 +16,12 @@
 
 .section {
     height: 100vh;
+    position: relative;
 
     &__home {
         background-color: $col-sec-1;
+
+
     }
 
     &__about-me {
@@ -43,5 +46,7 @@
     
     &__contact {
         background-color: $col-sec-7;
+
+        
     }
 }

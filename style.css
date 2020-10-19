@@ -339,6 +339,26 @@ textarea {
 .icon__link:not(:last-child) {
   margin-right: 1rem; }
 
+.btn-page-nav {
+  position: absolute;
+  bottom: 10rem;
+  right: 10rem;
+  border: 1px solid white;
+  border-radius: 1.4rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center; }
+  .btn-page-nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white; }
+  .btn-page-nav__link:not(:last-child) {
+    padding-right: 1rem;
+    border-right: 1px solid white; }
+  .btn-page-nav__link:not(:first-child) {
+    padding-left: 1rem; }
+
 .sidebar {
   background-color: #03045eff;
   grid-column: 1/2;
@@ -389,7 +409,8 @@ textarea {
   grid-column: 3/4; }
 
 .section {
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
   .section__home {
     background-color: #03045eff; }
   .section__about-me {
