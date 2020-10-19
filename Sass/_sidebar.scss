@@ -1,0 +1,43 @@
+//vanity sidebar
+
+.sidebar {
+    background-color: $col-sidebar;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+// interactive sidebar
+
+.profile {
+    grid-column: 2/3;
+    height: 100vh;
+
+    background-color: $col-body;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-flex {
+    position: fixed;
+
+    min-height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+}
+
+//bottom of flex box interactive sidebar
+
+.social-media__links {
+    display: flex;
+    justify-content: space-around;
+}

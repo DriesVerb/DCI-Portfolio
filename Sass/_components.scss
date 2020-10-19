@@ -1,0 +1,19 @@
+// Social media icons in sidebar
+
+.icon {
+    height: 3rem;
+    width: 3rem;
+    fill: $col-sidebar;
+}
+
+.icon:hover {
+    fill: $col-sidebar-hover;
+}
+
+.icon__link {
+    
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+

@@ -1,9 +1,30 @@
 .container-page {
     height: 100vh;
-    background-color: $col-yellow;
+    
+    background-color: $col-white;
 }
 
 .container-grid {
-    background-color: $col-orange;
-    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(3rem, 5rem) minmax(10rem, 30rem) minmax(60rem, 1fr);
+}
+
+.main-content {
+    grid-column: 3/4;
+}
+
+.section-hero {
+    height: 100vh;
+    background-color: $col-hero;
+}
+
+.section-skills {
+    height: 100vh;
+    background-color: $col-d-blue;
+}
+
+.section-hello {
+    height: 100vh;
+    background-color: $col-red;
 }
