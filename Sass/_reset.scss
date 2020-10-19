@@ -21,7 +21,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -38,7 +38,8 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: 'Roboto', sans-serif;
-    background-color: $col-body;
+    background-color: $col-sidebar;
+    overflow: hidden;
 }
 
 ol, ul {

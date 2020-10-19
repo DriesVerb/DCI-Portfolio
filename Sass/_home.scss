@@ -1,7 +1,6 @@
 .container-page {
     height: 100vh;
-    
-    background-color: $col-white;
+
 }
 
 .container-grid {
@@ -14,17 +13,35 @@
     grid-column: 3/4;
 }
 
-.section-hero {
-    height: 100vh;
-    background-color: $col-hero;
-}
 
-.section-skills {
+.section {
     height: 100vh;
-    background-color: $col-d-blue;
-}
 
-.section-hello {
-    height: 100vh;
-    background-color: $col-red;
+    &__home {
+        background-color: $col-sec-1;
+    }
+
+    &__about-me {
+        background-color: $col-sec-2;
+    }
+
+    &__frontend {
+        background-color: $col-sec-3;
+    }
+
+    &__backend {
+        background-color: $col-sec-4;
+    }
+
+    &__apps {
+        background-color: $col-sec-5;
+    }   
+    
+    &__content {
+        background-color: $col-sec-6;
+    }
+    
+    &__contact {
+        background-color: $col-sec-7;
+    }
 }

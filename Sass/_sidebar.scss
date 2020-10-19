@@ -1,7 +1,7 @@
 //vanity sidebar
 
 .sidebar {
-    background-color: $col-sidebar;
+    background-color: $col-content;
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -12,7 +12,7 @@
     grid-column: 2/3;
     height: 100vh;
 
-    background-color: $col-body;
+    background-color: $col-sidebar;
 
     display: flex;
     justify-content: center;
@@ -33,7 +33,24 @@
     display: flex;
     flex-direction: column;
     justify-self: flex-start;
+
+    &__link {
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: -1px;
+    }
+
+    &__link:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__link:hover,
+    &__link:active {
+        color: $col-content-hover;
+    }
 }
+
 
 //bottom of flex box interactive sidebar
 
