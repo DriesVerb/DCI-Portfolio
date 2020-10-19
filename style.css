@@ -341,13 +341,16 @@ textarea {
 
 .btn-page-nav {
   position: absolute;
-  bottom: 10rem;
+  bottom: 5rem;
   right: 10rem;
   border: 1px solid white;
   border-radius: 1.4rem;
   padding: 1rem;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 1550px) {
+    .btn-page-nav {
+      right: 5rem; } }
   .btn-page-nav__link {
     text-decoration: none;
     text-transform: uppercase;
@@ -389,7 +392,7 @@ textarea {
         font-weight: bold;
         letter-spacing: -1px;
     }*/ }
-  .profile-links__link:link, .profile-links__link:visited {
+  .profile-links__link, .profile-links__link:link, .profile-links__link:visited {
     text-decoration: none;
     font-size: 3rem;
     font-weight: bold;
@@ -411,6 +414,9 @@ textarea {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: minmax(3rem, 5rem) minmax(10rem, 30rem) minmax(60rem, 1fr); }
+  @media only screen and (max-width: 1550px) {
+    .container-grid {
+      grid-template-columns: minmax(3rem, 5rem) 25rem minmax(60rem, 1fr); } }
 
 .main-content {
   grid-column: 3/4; }
@@ -419,7 +425,10 @@ textarea {
   height: 100vh;
   position: relative; }
   .section__home {
-    background-color: #03045eff; }
+    background-color: #03045eff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .section__about-me {
     background-color: #023e8aff; }
   .section__frontend {
@@ -432,3 +441,48 @@ textarea {
     background-color: #48cae4ff; }
   .section__contact {
     background-color: #90e0efff; }
+
+.hero {
+  height: 80%;
+  width: 80%;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  @media only screen and (max-width: 1550px) {
+    .hero {
+      width: 90%;
+      height: 90%; } }
+  .hero__h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold; }
+    .hero__h1--big {
+      font-size: 20rem;
+      margin-bottom: 5rem; }
+      @media only screen and (max-width: 1550px) {
+        .hero__h1--big {
+          font-size: 15rem;
+          margin-bottom: 2.5rem; } }
+    .hero__h1--small {
+      font-size: 7rem;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 1550px) {
+        .hero__h1--small {
+          font-size: 5rem;
+          margin-bottom: 1.5rem; } }
+      .hero__h1--small-1 {
+        font-size: 5rem;
+        margin-bottom: 2rem; }
+        @media only screen and (max-width: 1550px) {
+          .hero__h1--small-1 {
+            font-size: 4rem;
+            margin-bottom: 2rem; } }
+  .hero__h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem; }
+    @media only screen and (max-width: 1550px) {
+      .hero__h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem; } }

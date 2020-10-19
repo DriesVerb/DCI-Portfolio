@@ -7,6 +7,10 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: minmax(3rem, 5rem) minmax(10rem, 30rem) minmax(60rem, 1fr);
+
+    @media only screen and (max-width: $bp-laptop) {
+        grid-template-columns: minmax(3rem, 5rem) 25rem minmax(60rem, 1fr);
+    }
 }
 
 .main-content {
@@ -21,7 +25,9 @@
     &__home {
         background-color: $col-sec-1;
 
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__about-me {
@@ -48,5 +54,68 @@
         background-color: $col-sec-7;
 
         
+    }
+}
+
+// hero section
+
+.hero {
+    height: 80%;
+    width: 80%;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media only screen and (max-width: $bp-laptop) {
+        width: 90%;
+        height: 90%;
+    }
+
+    &__h1 {
+        color: $col-white;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &--big {
+            font-size: 20rem;
+            margin-bottom: 5rem;
+
+            @media only screen and (max-width: $bp-laptop) {
+                font-size: 15rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        &--small {
+            font-size: 7rem;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-laptop) {
+                font-size: 5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            &-1 {
+                font-size: 5rem;
+                margin-bottom: 2rem;
+
+                @media only screen and (max-width: $bp-laptop) {
+                    font-size: 4rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    &__h2 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+
+        @media only screen and (max-width: $bp-laptop) {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
     }
 }

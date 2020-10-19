@@ -2,7 +2,7 @@
 
 .btn-page-nav {
     position: absolute;
-    bottom: 10rem;
+    bottom: 5rem;
     right: 10rem;
 
     border: 1px solid white;
@@ -11,6 +11,10 @@
 
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-laptop) {
+        right: 5rem;
+    }
 
     &__link {
         text-decoration: none;
