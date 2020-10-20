@@ -6,32 +6,32 @@
 .container-grid {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: minmax(3rem, 5rem) minmax(10rem, 30rem) minmax(60rem, 1fr);
+    grid-template-columns: 5rem 30rem minmax(60rem, 1fr);
 
     @media only screen and (max-width: $bp-laptop) {
-        grid-template-columns: minmax(3rem, 5rem) 25rem minmax(60rem, 1fr);
+        grid-template-columns: 3rem 25rem minmax(60rem, 1fr);
     }
 }
 
-.main-content {
+.main-content { 
     grid-column: 3/4;
 }
 
+//default values of all the main sections
 
 .section {
     height: 100vh;
     position: relative;
 
+    @include flex (row, center, center);
+
     &__home {
         background-color: $col-sec-1;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     &__about-me {
         background-color: $col-sec-2;
+
     }
 
     &__frontend {
@@ -119,3 +119,4 @@
         }
     }
 }
+
