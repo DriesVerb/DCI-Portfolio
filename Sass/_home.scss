@@ -1,13 +1,13 @@
 .container-page {
     height: 100vh;
-
+    
 }
 
 .container-grid {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 5rem 30rem minmax(60rem, 1fr);
-
+    
 
     @media only screen and (max-width: $bp-laptop) {
         grid-template-columns: 3rem 25rem minmax(60rem, 1fr);
@@ -51,6 +51,7 @@
 
 .main-content { 
     grid-column: 3/4;
+
 
     @media only screen and (max-width: $bp-tab-land) {
         grid-row: 1/2;

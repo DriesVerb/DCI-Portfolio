@@ -39,7 +39,15 @@ body {
     line-height: 1;
     font-family: 'Roboto', sans-serif;
     background-color: $col-sidebar;
-    overflow: hidden;
+    //overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 ol, ul {
