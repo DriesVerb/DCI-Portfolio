@@ -3,19 +3,28 @@
 .aboutme {
     height: 75%;
     width: 90%;
-
+    
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: $big-grid-gap;
+
+    @media only screen and (max-width: $bp-tab-port) {
+        height: 80%;
+        gap: $small-grid-gap;
+    }
 
     &__img {
         grid-row: 1/3;
         grid-column: 1/2;
         object-fit: cover;
         display: block;
-        height: 100%;
+        min-height: 100%;
         width: 100%;
+
+        @media only screen and (max-width: $bp-tab-port) {
+            grid-row: 1/4;
+        }
     }
 
     &__content {
@@ -50,6 +59,10 @@
         @include flex(row, space-around, center);
 
         background-color: $col-white;
+
+        @media only screen and (max-width: $bp-tab-port) {
+            display: none;
+        }
     }
 
     &__icon {

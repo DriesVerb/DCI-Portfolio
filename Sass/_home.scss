@@ -8,116 +8,55 @@
     grid-template-rows: 1fr;
     grid-template-columns: 5rem 30rem minmax(60rem, 1fr);
 
+
     @media only screen and (max-width: $bp-laptop) {
         grid-template-columns: 3rem 25rem minmax(60rem, 1fr);
     }
+
+    @media only screen and (max-width: $bp-tab-land) {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.sidebar {
+    background-color: $col-content;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    @media only screen and (max-width: $bp-tab-land) {
+        display: none;
+    }
+
+}
+
+// interactive sidebar
+
+.menu {
+    grid-column: 2/3;
+
+    @media only screen and (max-width: $bp-tab-land) {
+        display: none;
+    }
+
+    height: 100vh;
+
+    background-color: $col-sidebar;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-content { 
     grid-column: 3/4;
+
+    @media only screen and (max-width: $bp-tab-land) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
 }
 
-//default values of all the main sections
-
-.section {
-    height: 100vh;
-    position: relative;
-
-    @include flex (row, center, center);
-
-    &__home {
-        background-color: $col-sec-1;
-    }
-
-    &__about-me {
-        background-color: $col-sec-2;
-
-    }
-
-    &__frontend {
-        background-color: $col-sec-3;
-    }
-
-    &__backend {
-        background-color: $col-sec-4;
-    }
-
-    &__apps {
-        background-color: $col-sec-5;
-    }   
-    
-    &__content {
-        background-color: $col-sec-6;
-    }
-    
-    &__contact {
-        background-color: $col-sec-7;
-
-        
-    }
-}
-
-// hero section
-
-.hero {
-    height: 80%;
-    width: 80%;
-    padding: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-
-    @media only screen and (max-width: $bp-laptop) {
-        width: 90%;
-        height: 90%;
-    }
-
-    &__h1 {
-        color: $col-white;
-        text-transform: uppercase;
-        font-weight: bold;
-
-        &--big {
-            font-size: 20rem;
-            margin-bottom: 5rem;
-
-            @media only screen and (max-width: $bp-laptop) {
-                font-size: 15rem;
-                margin-bottom: 2.5rem;
-            }
-        }
-
-        &--small {
-            font-size: 7rem;
-            margin-bottom: 2rem;
-
-            @media only screen and (max-width: $bp-laptop) {
-                font-size: 5rem;
-                margin-bottom: 1.5rem;
-            }
-
-            &-1 {
-                font-size: 5rem;
-                margin-bottom: 2rem;
-
-                @media only screen and (max-width: $bp-laptop) {
-                    font-size: 4rem;
-                    margin-bottom: 2rem;
-                }
-            }
-        }
-    }
-
-    &__h2 {
-        font-size: 4rem;
-        margin-bottom: 3rem;
-
-        @media only screen and (max-width: $bp-laptop) {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-    }
-}
 

@@ -1,0 +1,14 @@
+// this is the contact section 
+
+.contact {
+    height: 30rem;
+    width: 70rem;
+    background-color: $col-white;
+
+    @include flex(row, center, center);
+
+    &__title {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+}

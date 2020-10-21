@@ -1,25 +1,6 @@
-//vanity sidebar
+//menu content
 
-.sidebar {
-    background-color: $col-content;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-// interactive sidebar
-
-.profile {
-    grid-column: 2/3;
-    height: 100vh;
-
-    background-color: $col-sidebar;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-flex {
+.menu-flex {
     position: fixed;
 
     min-height: 80%;
@@ -29,7 +10,7 @@
     justify-content: space-between;
 }
 
-.profile-links {
+.menu-links {
     display: flex;
     flex-direction: column;
     justify-self: flex-start;

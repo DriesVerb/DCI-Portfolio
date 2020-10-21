@@ -1,0 +1,44 @@
+//default values of all the main sections
+
+.section {
+    height: 100vh;
+
+    position: relative;
+
+    @include flex (row, center, center);
+
+    @media only screen and (max-width: $bp-lg-phone) {
+        @include flex (column, space-evenly, center);
+    }
+
+    &__home {
+        background-color: $col-sec-1;
+    }
+
+    &__about-me {
+        background-color: $col-sec-2;
+
+    }
+
+    &__frontend {
+        background-color: $col-sec-3;
+    }
+
+    &__backend {
+        background-color: $col-sec-4;
+    }
+
+    &__apps {
+        background-color: $col-sec-5;
+    }   
+    
+    &__content {
+        background-color: $col-sec-6;
+    }
+    
+    &__contact {
+        background-color: $col-sec-7;
+
+        
+    }
+}
