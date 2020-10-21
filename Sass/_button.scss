@@ -27,6 +27,10 @@
         text-transform: uppercase;
         font-size: 2rem;
         color: white;
+
+        &:hover {
+            color: $col-content-hover;
+        }
     }
 
     &__link:not(:last-child) {

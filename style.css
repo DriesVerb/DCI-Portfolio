@@ -364,6 +364,8 @@ textarea {
     text-transform: uppercase;
     font-size: 2rem;
     color: white; }
+    .btn-page-nav__link:hover {
+      color: #ade8f4ff; }
   .btn-page-nav__link:not(:last-child) {
     padding-right: 1rem;
     border-right: 1px solid white; }
@@ -714,7 +716,7 @@ textarea {
   width: 70rem;
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
   @media only screen and (max-width: 550px) {
@@ -724,7 +726,9 @@ textarea {
   .contact__title {
     font-size: 5rem;
     font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    color: #03045eff;
+    margin-bottom: 2rem; }
     @media only screen and (max-width: 550px) {
       .contact__title {
         font-size: 3rem; } }
