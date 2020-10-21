@@ -32,6 +32,10 @@
                 font-size: 15rem;
                 margin-bottom: 2.5rem;
             }
+
+            @media only screen and (max-width: $bp-tab-port) {
+                font-size: 10rem;
+            }
         }
 
         &--small {
