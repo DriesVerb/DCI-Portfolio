@@ -347,6 +347,27 @@ textarea {
 .icon__link:not(:last-child) {
   margin-right: 1rem; }
 
+.logo {
+  height: 8rem;
+  width: 8rem; }
+  @media only screen and (max-width: 550px) {
+    .logo {
+      max-height: 5rem;
+      max-width: 5rem; } }
+  @media only screen and (max-width: 890px) {
+    .logo--big {
+      height: 10rem;
+      width: 10rem; } }
+  @media only screen and (max-width: 550px) {
+    .logo--big {
+      max-height: 5rem;
+      max-width: 5rem; } }
+  .logo--center {
+    margin-bottom: 5rem; }
+    @media only screen and (max-width: 890px) {
+      .logo--center {
+        margin-bottom: 10rem; } }
+
 .btn-page-nav {
   position: absolute;
   bottom: 5rem;
@@ -582,13 +603,6 @@ textarea {
         flex-direction: row;
         justify-content: space-around;
         align-items: center; } }
-  .frontend__icon {
-    height: 8rem;
-    width: 8rem; }
-    @media only screen and (max-width: 550px) {
-      .frontend__icon {
-        max-height: 5rem;
-        max-width: 5rem; } }
   .frontend__img {
     object-fit: cover;
     height: 100%;
@@ -648,6 +662,9 @@ textarea {
       .backend__quote {
         font-size: 3rem;
         font-weight: 500; } }
+    @media only screen and (max-width: 550px) {
+      .backend__quote {
+        font-size: 1.5rem; } }
   .backend__icon {
     margin-bottom: 5rem; }
     @media only screen and (max-width: 890px) {
